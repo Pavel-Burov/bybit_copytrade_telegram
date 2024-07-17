@@ -1,7 +1,6 @@
 import time, ccxt, config
 from pybit import HTTP
 
-
 exchange = ccxt.bybit({'apiKey': config.api_key,'secret': config.api_secret})
 client = HTTP(api_key=config.api_key,api_secret=config.api_secret)
 symbol = config.symbol
